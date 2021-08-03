@@ -74,11 +74,10 @@ const resolvers = {
       const { id, name, code, states } = input;
 
       const data = {
-        id,
+        id : 1,
         name,
         code,
         dateInserted: new Date(),
-		states
       };
 
       localData.push(data);
@@ -86,7 +85,7 @@ const resolvers = {
       return {
         id,
         name,
-        code,
+			code,
       };
     },
   },
